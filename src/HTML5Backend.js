@@ -33,10 +33,10 @@ export default class HTML5Backend {
     this.handleSelectStart = this.handleSelectStart.bind(this);
     this.endDragIfSourceWasRemovedFromDOM = this.endDragIfSourceWasRemovedFromDOM.bind(this);
     this.endDragNativeItem = this.endDragNativeItem.bind(this);
-    if(this.context && this.context.window){
-      this.window=this.context.window;
-    }else if(typeof window !== 'undefined'){
-      this.window=window;
+    if (this.context && this.context.window) {
+      this.window = this.context.window;
+    } else if (typeof window !== 'undefined') {
+      this.window = window;
     }
   }
 
